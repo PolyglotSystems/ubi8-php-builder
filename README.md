@@ -16,7 +16,7 @@ docker pull quay.io/polyglotsystems/ubi8-php-builder:latest
 
 ## Tags
 
-- `:latest`, `:7.4`
+- `main`, `:latest`, `:7.4`
 
 # Licenses
 
