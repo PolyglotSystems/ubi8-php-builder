@@ -29,7 +29,7 @@ jobs:
       id: php_version
       run: |
         IS_TAGGED_VERSION="false"
-        if [ ${SOURCE_NAME:0:1} = "v" ]; then IS_TAGGED_VERSION="true"; PHP_VERSION="${SOURCE_NAME:1}" fi
+        if [ ${SOURCE_NAME:0:1} = "v" ]; then IS_TAGGED_VERSION="true" PHP_VERSION="${SOURCE_NAME:1}"; fi
         echo ::set-output name=IS_TAGGED_VERSION::$IS_TAGGED_VERSION
         echo ::set-output name=PHP_VERSION::$PHP_VERSION
 
