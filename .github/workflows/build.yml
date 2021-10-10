@@ -34,8 +34,8 @@ jobs:
         IFS='.' read -r -a verArr <<< "$SOURCE_NAME"
         [ "${verArr[0]:0:1}" = "v" ] && export IS_TAGGED_VERSION="true"
         [ "${verArr[0]:0:1}" = "v" ] && export PHP_VERSION="${verArr[0]:1}.${verArr[1]}"
-        echo "${IS_TAGGED_VERSION}"
-        echo "${PHP_VERSION}"
+        echo "IS_TAGGED_VERSION: ${IS_TAGGED_VERSION}"
+        echo "PHP_VERSION: ${PHP_VERSION}"
         echo ::set-output name=IS_TAGGED_VERSION::$IS_TAGGED_VERSION
         echo ::set-output name=PHP_VERSION::$PHP_VERSION
 
