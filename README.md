@@ -1,6 +1,6 @@
 # ubi8-php-builder
 
-[![Container Image on Quay](https://img.shields.io/badge/Container%20Image-Quay.io-orange)](https://quay.io/polyglotsystems/ubi8-php-builder) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/PolyglotSystems/ubi8-php-builder/Build%20PHP%20UBI%20Container?label=Container%20Build&style=flat-square) ![GitHub](https://img.shields.io/github/license/PolyglotSystems/ubi8-php)-builder ![GitHub release (latest by date)](https://img.shields.io/github/v/release/PolyglotSystems/ubi8-php-builder)
+[![Container Image on Quay](https://img.shields.io/badge/Container%20Image-Quay.io-orange)](https://quay.io/polyglotsystems/ubi8-php-builder) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/PolyglotSystems/ubi8-php-builder/Build%20PHP%20Builder%20UBI%20Container?label=Container%20Build&style=flat-square) ![GitHub](https://img.shields.io/github/license/PolyglotSystems/ubi8-php-builder) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/PolyglotSystems/ubi8-php-builder)
 
 A PHP builder container based on RHEL UBI 8.
 
