@@ -30,6 +30,7 @@ jobs:
       run: |
         IS_TAGGED_VERSION="false"
         PHP_VERSION="8.0"
+        SOURCE_NAME="${{ steps.git_build_info.outputs.SOURCE_NAME }}"
         IFS='.' read -r -a verArr <<< "$SOURCE_NAME"
         [ "${verArr[0]:0:1}" = "v" ] && export IS_TAGGED_VERSION="true"
         [ "${verArr[0]:0:1}" = "v" ] && export PHP_VERSION="${verArr[0]:1}.${verArr[1]}"
