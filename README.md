@@ -35,6 +35,7 @@ COPY ./my-php-app /var/www/html
 ```bash
 sudo podman run --name ubi8-php-builder --rm -p 8080:8080 -v ./my-php-app:/var/www/html quay.io/polyglotsystems/ubi8-php-builder:latest /var/www/html/my-build-script.sh
 ```
+
 # Licenses
 
 - The Red Hat Universal Base Image is covered by [its own EULA](https://www.redhat.com/licenses/EULA_Red_Hat_Universal_Base_Image_English_20190422.pdf)
