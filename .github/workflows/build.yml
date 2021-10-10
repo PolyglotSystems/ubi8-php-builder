@@ -31,8 +31,8 @@ jobs:
         IS_TAGGED_VERSION="false"
         PHP_VERSION="8.0"
         IFS='.' read -r -a verArr <<< "$SOURCE_NAME"
-        if [[ "${verArr[0]:0:1}" == "v" ]]; then IS_TAGGED_VERSION="true"; fi
-        if [[ "${verArr[0]:0:1}" == "v" ]]; then PHP_VERSION="${verArr[0]:1}.${verArr[1]}"; fi
+        [ "${verArr[0]:0:1}" = "v" ] && export IS_TAGGED_VERSION="true"
+        [ "${verArr[0]:0:1}" = "v" ] && export PHP_VERSION="${verArr[0]:1}.${verArr[1]}"
         echo "${IS_TAGGED_VERSION}"
         echo "${PHP_VERSION}"
         echo ::set-output name=IS_TAGGED_VERSION::$IS_TAGGED_VERSION
